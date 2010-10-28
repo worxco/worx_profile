@@ -7,7 +7,7 @@
  * @return
  *   An array of modules to enable.
  */
-function worx_commerce_profile_modules() {
+function worx_commerce2_profile_modules() {
   return array(
     // General modules
     'help', 'menu', 'taxonomy', 'dblog', 'path', 'admin', 'advanced_help', 'views', 'views_bulk_operations', 'token', 'pathauto', 'lightbox2', 
@@ -38,7 +38,7 @@ function worx_commerce_profile_modules() {
  *   and optional 'language' to override the language selection for
  *   language-specific profiles.
  */
-function worx_commerce_profile_details() {
+function worx_commerce2_profile_details() {
   return array(
     'name' => 'Worx Commerce',
     'description' => 'Installs the Worx Commerce profile.  Specific features will require turning on.'
@@ -54,7 +54,7 @@ function worx_commerce_profile_details() {
  *   while the values will be displayed to the user in the installer
  *   task list.
  */
-function worx_commerce_profile_task_list() {
+function worx_commerce2_profile_task_list() {
 }
 
 /**
@@ -108,7 +108,7 @@ function worx_commerce_profile_task_list() {
  *   An optional HTML string to display to the user. Only used if you
  *   modify the $task, otherwise discarded.
  */
-function worx_commerce_profile_tasks(&$task, $url) {
+function worx_commerce2_profile_tasks(&$task, $url) {
 
   // Insert default user-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
@@ -281,7 +281,7 @@ function worx_commerce_profile_tasks(&$task, $url) {
  * Allows the profile to alter the site-configuration form. This is
  * called through custom invocation, so $form_state is not populated.
  */
-function worx_commerce_form_alter(&$form, $form_state, $form_id) {
+function worx_commerce2_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'install_configure') {
     // Set default for site name field.
     $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];

@@ -115,8 +115,10 @@ projects[weight][version] = "1"
 
 ;Ubercart modules
 
-projects[imagefield_gallery][subdir] = "standard"
-projects[imagefield_gallery][version] = "3"
+libraries[imagefield_gallery][download][type] = "get"
+libraries[imagefield_gallery][destination] = "modules/secondary"
+libraries[imagefield_gallery][download][url] = "http://features.worxco.com/sites/default/files/fserver/imagefield_gallery-6.x-3.0-alpha5.tgz"
+libraries[imagefield_gallery][directory_name] = "imagefield_gallery"
 
 projects[taxonomy_image][subdir] = "standard"
 projects[taxonomy_image][version] = "1"
@@ -235,3 +237,8 @@ libraries[menu_block][download][type] = "git"
 libraries[menu_block][destination] = "modules/features"
 libraries[menu_block][download][url] = "git://github.com/Staris/Menu-Block-Setup.git"
 libraries[menu_block][directory_name] = "menu_block"
+
+libraries[ca_gallery][download][type] = "git"
+libraries[ca_gallery][destination] = "modules/features"
+libraries[ca_gallery][download][url] = "git://github.com/worxco/ca_gallery.git"
+libraries[ca_gallery][directory_name] = "ca_gallery"
